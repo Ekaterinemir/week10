@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Best destinations</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
+ <body>
 <!-- navbar -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid text-center background-color: #e3f2fd">
+<div class="container-fluid backgroundColor">
+<nav class="navbar navbar-expand-lg">
+ 
     <a class="navbar-brand" href="#">World Destinations</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -27,18 +29,19 @@
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
-  </div>
-</nav>
-
+ 
   
-    <h3 class="text-center p-1">The Best Destinations in the World!</h3>
+</nav>
+</div>
+  
+    <h3 class="text-center p-5">The Best Destinations in the World!</h3>
     
      <!--Cards-->
     <div class="container text-center">
     <div class="row">
-      <div class="col-sm">
+      <div class="col-md">
         <div class="card" style="width: 18rem;">
-          <img src="https://www.istockphoto.com/photo/eiffel-tour-and-paris-cityscape-gm1133449890-300830376?phrase=paris%20city" alt="Paris">
+          <img src="https://imageio.forbes.com/specials-images/imageserve/6468ea7be5b5bee9d12e9948/eiffel-tour-and-Paris-cityscape/0x0.jpg?format=jpg&height=1835&width=2767" alt="Paris">
           <div class="card-body">
             <h5 class="card-title">Paris</h5>
             <p class="card-text">The City of Light draws millions of visitors every year with its unforgettable 
@@ -53,9 +56,9 @@
 
 
       </div>
-      <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="BoraBora">
+      <div class="col-md">
+        <div class="card" style="width: 18rem">
+          <img src="https://www.downunderendeavours.com/wp-content/uploads/2015/07/borabora-wheretostay-900x600-stregis-str1743-facing-Mt-Otemanu.jpg" class="card-img-top" alt="BoraBora">
           <div class="card-body">
             <h5 class="card-title">BoraBora</h5>
             <p class="card-text">Bora Bora Island is a dreamed sought-after destination for a romantic trip in 
@@ -67,9 +70,9 @@
         </div>
 
       </div>
-      <div class="col-sm">
+      <div class="col-md">
         <div class="card" style="width: 18rem;">
-          <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.fodors.com%2Fworld%2Feurope%2Fitaly%2Frome%2Fexperiences%2Fnews%2Fphotos%2F25-ultimate-things-to-do-in-rome&psig=AOvVaw2WKcqOwQU7gtJPmXS36-xL&ust=1692321671705000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCPCFoJfF4oADFQAAAAAdAAAAABAE" class="card-img-top" alt="Rome">
+          <img src="https://tourismmedia.italia.it/is/image/mitur/20220127150143-colosseo-roma-lazio-shutterstock-756032350-1?wid=1600&hei=900&fit=constrain,1&fmt=webp" class="card-img-top img-fluid" alt="Rome">
           <div class="card-body">
             <h5 class="card-title">Rome</h5>
             <p class="card-text">Rome, the city of seven hills, enjoyed a mythic beginning. Romulus and Remus - twin
@@ -83,9 +86,9 @@
         </div>
        
       </div>
-      <div class="col-sm">
+      <div class="col-md">
         <div class="card" style="width: 18rem;">
-          <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.roughguides.com%2Fswitzerland%2Fswiss-alps%2F&psig=AOvVaw0ZBhndHSIQeg36WgM9Xej9&ust=1692322381735000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCNDMy6TG4oADFQAAAAAdAAAAABAE" class="card-img-top" alt="Swiss Alps">
+          <img src="https://deih43ym53wif.cloudfront.net/zermatt-matterhorn-switzerland-shutterstock_1298208013_44fea015e5.jpeg" class="card-img-top" alt="Swiss Alps">
           <div class="card-body">
             <h5 class="card-title">Swiss Alps</h5>
             <p class="card-text">now-covered mountains, charming towns and flower-strewn meadows make the Swiss Alps a 
@@ -107,7 +110,7 @@
 <br>
 <!--Paragraph-->
 <div class="container text-center fs-5">
-  <h5 class="text-center p-1 m2">And so the Adventure begins!</h5>
+  <h5 class="text-center p-5 m2">And so the Adventure begins!</h5>
   <p>The thrill of traveling starts even before the journey. It is the excitement on deciding where to go next. 
     It is part of planning what to do and packing your bags. The excitement grows the night before traveling and it 
     continues while stepping inside the air plane. It doesn't stop when arriving to your destination, because this is
@@ -123,8 +126,11 @@
     
   </p>
 </div>
-<h5 text-center>Choose your dream Destination</h5>
-<body class="container">
+<!--form-->
+
+<h5 class="text-center p-5">Book your dream Destination</h5>
+
+<div class="container">
     <div class="card">
         <div class="card-body">
         <div class="row">
@@ -152,56 +158,58 @@
                 </div>
             </div>
         </div>
+        <button id="add" class="btn btn-primary form-control">Create</button>
     </div>
-    <button id="add" class="btn btn-primary form-control">Create</button>
+  </div>
+</div>
+</div>
 
-</div>
-</div>
-     
-</div>
 
 <!--table-->
-
+<div class="container">
 <table id="list" class="table table-dark table-striped">
-    <tr>
-        <th>Destination</th>
-        <th>Date Created</th>
-        <th>Start Date</th>
-        <th>Due Date</th>
-        <th>Actions</th>
-       
-    </tr>
+  <tr>
+      <th>Destination</th>
+      <th>Date Created</th>
+      <th>Start Date</th>
+      <th>Due Date</th>
+      <th>Actions</th>
+      </tr>
 </table>
+</div>
 <!--Images-->
+
 <div class="container mt-5 mb-5 pt-5 pb-5 text-center">
+  <div class="m-3 p-5">
 <div class="row gx-0 gx-0">
   <div class="col-sm-12"></div>
 </div>
 <div class="row gx-0 g-0">
-  <div class="col-sm-8">
-    <img src ="https://www.tripadvisor.com/Tourism-g295424-Dubai_Emirate_of_Dubai-Vacations.html" class="img-fluid width=600px height=200px" alt="Dubai">
+  <div class="col-sm-6">
+    <img class="img-fluid" src ="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZHViYWl8ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt="Dubai"  width="500" height="400">
     <h6 class="card-title">Dubai</h6>
-    
-    <div class="col-sm-4">
-      <img src ="https:https://www.tripadvisor.com/Tourism-g293974-Istanbul-Vacations.html" class="img-fluid width=600px height=200px" alt="Istanbul">
+    </div>
+    <div class="col-sm-6">
+      <img class="img-fluid"src ="https://media.istockphoto.com/id/1327842864/photo/blue-mosque-of-istanbul-famous-place-of-visit-turkey.webp?b=1&s=170667a&w=0&k=20&c=YjN-SXr1eQuJcNA7DvFP103vcJWrX5md4tSNmo7QmdE=" alt="Istanbul" width="500" height="500">
       <h6 class="card-title">Istanbul</h6>
-
-      <div class="col-sm-8">
-        <img src ="https://www.tripadvisor.com/Tourism-g187514-Madrid-Vacations.html" class="img-fluid width=600px height=200px" alt="Madrid">
+     </div>
+     <div class="row gx-0 g-0">
+      <div class="col-sm-6">
+        <img class="img-fluid"src ="https://media.architecturaldigest.com/photos/57ad893acfc37bc171ad8082/4:3/w_4564,h_3423,c_limit/madrid-travel-guide.jpg" alt="Madrid" width="500" height="400">
         <h6 class="card-title">Madrid</h6>
-
-        <div class="col-sm-4">
-          <img src ="https://www.tripadvisor.com/Tourism-g294201-Cairo_Cairo_Governorate-Vacations.html" class="img-fluid width=600px height=200px" alt="Cairo">
+      </div>
+        <div class="col-sm-6">
+          <img class="img-fluid"src ="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/9b/2f/5b/cairo.jpg?w=700&h=500&s=1" alt="Cairo" width="500" height="400">
           <h6 class="card-title">Cairo</h6>
-  
   </div>
 </div>
  </div>
-  </div>
+</div>
+ </div>
 
 <!--Form-->
-
-<h6 text-center>Choose the destination and Contact Us</h6>
+<div class="container">
+<h6 class="text-center">Choose the destination and Contact Us</h6>
 <form class="row g-3 pb3 left">
   <div class="col-md-6">
     <label for="First Name" class="form-label">First Name</label>
@@ -215,6 +223,7 @@
     <label for="Email" class="form-label">Email</label>
     <input type="Email" class="form-control" id="inputAddress" >
   </div>
+
   <div class="col-md-6">
     <label for="PhoneNumber" class="form-label">Phone Number</label>
     <input type="PhoneNumber" class="form-control" id="PhoneNumber">
@@ -223,17 +232,17 @@
 
     </div>
   </div>
-  <div class="col-12">
+  <div class="col-12 text-center">
     <button type="submit" class="btn btn-primary">Submit</button>
   </div>
-</form>
-
+</form> 
+</div>
 
 <!--Footer-->
 
-<footer class="pt-5 pb-5">
+<footer class="pt-8 pb-8 backgroundColor"> 
 <div class="text-center p-2">
-  <h5>The Best Destinations 2023</h5>
+  <h6>World Destinations 2023</h6>
 </div>
 </footer>
 

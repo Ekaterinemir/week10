@@ -10,7 +10,7 @@ document.getElementById('add').addEventListener ("click",()=>{
     row.insertCell(2).innerHTML=document.getElementById("new-start-date").value; 
     row.insertCell(3).innerHTML=document.getElementById("new-end-date").value; 
     let action=row.insertCell(4);
-    actions.appendChild(createDeleteButton(id++));
+    action.appendChild(createDeleteButton(id++));
     document.getElementById("new-task").value=" ";
     
    });
